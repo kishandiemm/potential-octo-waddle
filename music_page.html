@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundwave</title>
+</head>
+
+<body class="container full-height-grow">
+    <header class="main-header">
+        <a href="/" class="brand-logo">
+            <img
+                src="https://raw.githubusercontent.com/WebDevSimplified/Spotify-Landing-Page-Redesign/master/images/logo.png">
+            <div class="brand-logo-name">Soundwave</div>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home-main-section">
+        <div class="img-wrapper">
+            <div class="lady-image"></div>
+        </div>
+        <div class="call-for-action">
+            <h1 class="title"> Feel The Music</h1>
+            <span class="subtitle">Stream over 20
+                thousand songs with one click
+            </span>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+    </section>
+    <div class="home-page-circle-1"></div>
+    <div class="home-page-circle-2"></div>
+    <div class="home-page-circle-3"></div>
+</body>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #2f303a;
+        font-family: Poppins, sans-serif;
+        font-size: 1.2rem;
+        color: white;
+        min-height: 100vh;
+    }
+
+    .full-height-grow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+        color: inherit;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .brand-logo-name {
+        margin-left: 1rem;
+    }
+
+    .main-nav ul,
+    .footer-nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .main-nav a,
+    .footer-nav a {
+        text-decoration: none;
+        color: inherit;
+        padding: 1rem;
+    }
+
+    .main-nav a:hover,
+    .footer-nav a:hover {
+        color: #adadad;
+    }
+
+    .main-header,
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-header {
+        height: 140px;
+    }
+
+    .main-footer {
+        height: 70px;
+        background-color: #202027;
+        font-weight: bold;
+    }
+
+    .social-link img {
+        width: 1em;
+        margin-right: .25rem;
+    }
+
+    .main-footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        flex-grow: 1;
+    }
+
+    .title {
+        font-weight: 500;
+        font-size: 3em;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .subtitle {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        color: white;
+        background-color: #1762A7;
+        padding: .75rem 1.5rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        font-size: .9rem;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #2180d8;
+    }
+
+    .btn:focus {
+        background-color: #2796ff;
+    }
+
+    /* index.css */
+    .home-main-section {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .home-main-section .img-wrapper {
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+
+    .home-main-section .lady-image {
+        background-image: url(https://raw.githubusercontent.com/WebDevSimplified/Spotify-Landing-Page-Redesign/master/images/landing-page-girl.png);
+        flex-grow: 1;
+        max-height: 70vh;
+        min-width: 30vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+
+    .home-main-section .call-for-action {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem;
+        align-self: center;
+    }
+
+    @media (max-width: 900px) {
+        .home-main-section .img-wrapper {
+            display: none;
+        }
+
+        .home-main-section {
+            justify-content: center;
+        }
+
+    }
+
+    .home-page-circle-1 {
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        background-color: rgba(188, 58, 128, 0.1);
+        left: 5vw;
+        bottom: 5vw;
+        z-index: -1;
+    }
+
+    .home-page-circle-2 {
+        position: absolute;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        background-color: rgba(52, 87, 178, 0.1);
+        left: 30vw;
+        top: 15vw;
+        z-index: -1;
+    }
+
+    .home-page-circle-3 {
+        position: absolute;
+        overflow: hidden;
+        width: 45vw;
+        height: 45vw;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .home-page-circle-3::before {
+        content: "";
+        transform: translate(40%, 40%);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: rgba(52, 87, 178, 0.1);
+
+    }
+</style>
+
+</html>
